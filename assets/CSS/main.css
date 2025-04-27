@@ -1,0 +1,1502 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --main-color: rgb(251, 238, 241);
+  --second-color: rgb(230, 109, 170);
+}
+
+@keyframes zoomButton {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.always-moving {
+  animation: zoomButton 2s infinite ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: var(--main-font);
+}
+
+.main-bg-color {
+  background-color: var(--main-color);
+}
+
+.second-bg-color {
+  background-color: var(--second-color);
+}
+
+/* Start navbar  */
+.navbar {
+  overflow: hidden;
+}
+
+.navbar-brand {
+  width: 10%;
+}
+
+.rightSide .navbar-nav {
+  margin-right: 25px;
+}
+
+.links-content {
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--second-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--second-color);
+}
+
+.navbar-nav .TourNow:hover {
+  background-color: var(--main-color);
+}
+
+/* End navbar  */
+/* Start Hero */
+.hero {
+  overflow: hidden;
+}
+
+.hero .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero .leftSide h1 {
+  font-size: clamp(4rem, 4vw, 3.5rem);
+}
+
+.hero .leftSide p {
+  font-size: clamp(1rem, 1.1vw, 2.5rem);
+}
+
+.hero .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 3.5rem;
+}
+
+.hero .rightSide img {
+  width: 88%;
+  height: 93%;
+  border-radius: 25px;
+}
+
+.hero .progress {
+  top: 3.5rem;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(230, 109, 170);
+  position: relative;
+  top: 3.3rem;
+}
+
+/* ********End Hero Section********* */
+
+/* **********Start Main********* */
+/* Start Infant, Toddler & Preschool Section */
+.baby {
+  background-color: white;
+  overflow: hidden;
+}
+
+.title h2 {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 600;
+}
+
+.title span {
+  font-size: clamp(1rem, 1.1vw, 2.5rem);
+}
+
+.card {
+  background-color: var(--main-color);
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 8px 10px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(90deg,
+      rgba(227, 82, 174, 0.938) 0%,
+      rgb(230, 106, 168) 4%,
+      rgba(238, 113, 175, 0.833) 24%,
+      rgba(236, 146, 191, 0.626) 100%);
+}
+
+.baby .cardToWidth {
+  width: 32%;
+}
+
+.baby .progress {
+  position: relative;
+  top: 3rem;
+}
+
+
+/* End Infant, Toddler & Preschool Section*/
+
+/* Start Hands on Project-based Learning */
+
+.handsOnLearning {
+  padding: 3rem 0 5rem;
+  overflow: hidden;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  flex-direction: row;
+}
+
+.boxes .box {
+  width: 520px;
+  height: 530px;
+  background-color: white;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 8px 8px rgba(152, 151, 151, 0.2);
+}
+
+.boxes .box img {
+  width: 520px;
+  height: 380px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.boxes .handsContant {
+  top: 19rem;
+  padding: 1.5rem;
+  text-align: start;
+  background-color: white;
+}
+
+.box .handsContant p {
+  font-size: 16px;
+}
+
+.handsOnLearning .progress {
+  top: 5.5rem;
+}
+
+/* Start Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.first-slide {
+  width: 0.1rem !important;
+}
+
+/* .last-slide {
+  width: 0 !important;
+} */
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  color: black;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(28, 9, 9, 0.715);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 1rem) !important;
+}
+
+.swiper-button-prev {
+  position: relative;
+  bottom: 1rem;
+  color: #000;
+}
+
+.handsOnLearning .swiper-button-next {
+  margin-top: 17rem;
+}
+
+/* End Swiper */
+/* End Hands on Project-based Learning */
+
+/* Start Flamingo's success compared to the rest */
+.flamingoSuccess {
+  height: 100vh;
+  margin: 4.5rem 0 7rem;
+  overflow: hidden;
+}
+
+.twoBoxes {
+  height: 500px;
+  border-radius: 20px;
+}
+
+.leftsideContant {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 3rem 0 0 3rem;
+}
+
+.leftsideContant .lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.leftsideContant .lines div {
+  padding-left: 8px;
+  height: 35px;
+  background-color: var(--second-color);
+  font-size: 20px;
+}
+
+.leftsideContant .sixtyFive {
+  width: 65%;
+}
+
+.rightsideContant {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 3rem 0 0 3rem;
+}
+
+.rightsideContant .images {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rightsideContant .images img {
+  width: 160px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.flamingoSuccess .progress {
+  top: 5.6rem;
+}
+
+/* End Flamingo's success compared to the rest */
+/* Start Parties */
+.parties {
+  overflow: hidden;
+}
+
+.parties .title {
+  padding: 2.7rem;
+  margin-top: 3rem;
+}
+
+.parties .row {
+  justify-content: center;
+  gap: 8rem;
+  margin: 3.8rem 0 6rem;
+  overflow: hidden;
+}
+
+.parties .row img {
+  width: 10%;
+}
+
+/* start parties_two  */
+.parties_two {
+  padding-top: 2.1rem;
+  overflow: hidden;
+}
+
+.parties_two .swiper-button-next {
+  margin-top: 17rem;
+}
+
+.parties_two .progress {
+  top: 0.5rem;
+}
+
+/* End Parties */
+
+/* Start What Our Parents Are Saying */
+.parents {
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  margin: 4rem 0 0rem 0;
+}
+
+.parents .row {
+  justify-content: space-around;
+  gap: 25px;
+  background-color: white;
+}
+
+.parents .leftcontent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.parents .leftcontent p {
+  font-size: 17px;
+  text-align: start;
+}
+
+.parents .rightcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parents .swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parents .swiper-slide {
+  width: 85%;
+  height: 13%;
+}
+
+.parents .swiper-slide img {
+  display: block;
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px rgba(150, 149, 149, 0.173);
+}
+
+.parents .swiper-button-next {
+  position: relative;
+  bottom: 3.8rem;
+  left: 78rem;
+}
+
+.parents .progress {
+  top: -1.9rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: relative;
+  top: var(--swiper-pagination-bottom, 0rem);
+}
+
+/* End What Our Parents Are Saying */
+
+/* Start Frequently Asked Questions  */
+.questions {
+  background-color: var(--main-color);
+  padding: 3.6rem 0 12rem 0;
+  overflow: hidden;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 20px;
+  text-align: start;
+  margin-left: -20px;
+}
+
+.accordion-header {
+  background-color: var(--main-color);
+}
+
+.accordion-flush>.accordion-item {
+  border-radius: 0;
+  border: 0;
+}
+
+.accordion .accordion-item .accordion-header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.837);
+}
+
+.accordion-button {
+  background-color: var(--main-color);
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  content: "";
+  background-image: url(../images/Public/plus-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/Public/x-solid.svg);
+  transform: rotate(180deg);
+  width: 30px;
+  height: 30px;
+  background-size: 17px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(9, 8, 8);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.accordion-button:focus {
+  z-index: 0;
+  outline: 0;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  color: black;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 white;
+  border-radius: 0;
+}
+
+.accordion-body {
+  border: 0;
+  background-color: var(--main-color);
+}
+
+.accordion {
+  --bs-accordion-border-width: 0;
+}
+
+.questions .TourNow {
+  position: relative;
+  top: 5rem;
+  width: 160px;
+}
+
+.questions .progress {
+  top: 12.6rem;
+}
+
+/* End Frequently Asked Questions  */
+
+/* Start Our Location */
+.location {
+  overflow: hidden;
+}
+
+.location .row {
+  justify-content: center;
+  gap: 3.7rem;
+}
+
+.location .row .leftcontent {
+  width: 40%;
+}
+
+.location .row .leftcontent h3 {
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+}
+
+.location .row .leftcontent a {
+  width: fit-content;
+  padding: 15px;
+}
+
+.location .row .rightcontent {
+
+  width: 40%;
+}
+
+.location .row .rightcontent img {
+  border-radius: 20px;
+  box-shadow: 0 0 8px 8px rgba(152, 151, 151, 0.2);
+}
+
+/* End  Our Location */
+/* End main  */
+
+/* Start Footer  */
+.footer {
+  padding: 0 0 4rem 0;
+  overflow: hidden;
+}
+
+.footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0 1.5rem;
+}
+
+.footer a.logo {
+  position: relative;
+  top: 1rem;
+}
+
+.footer .logo img {
+  width: 130px;
+}
+
+.footer .items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+}
+
+.footer .items .item {
+  list-style: none;
+}
+
+.footer .items .item img {
+  width: 30px;
+}
+
+/* End Footer  */
+
+
+/* ********************************************* Start BootStrap  max-width: 576px*************************************** */
+@media only screen and (max-width: 576px) {
+
+  /* Navbar Section */
+  .navbar .container-fluid {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-brand {
+    width: 21%;
+  }
+
+  .RightSide {
+    display: none !important;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 6rem;
+    height: 1000px;
+  }
+
+  .hero .rightSide {
+    top: 1.5rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /*  Infant, Toddler & Preschool Section */
+
+  .baby .container {
+    width: 100%;
+  }
+
+  .baby .cardToWidth {
+    width: 80%;
+  }
+
+  /* Hands on Project-based Learning */
+
+  .handsOnLearning .container {
+    width: 100%;
+  }
+
+  .boxes {
+    width: 100% !important;
+  }
+
+  .swiper-wrapper {
+    width: 60%;
+  }
+
+  .boxes .box {
+    width: 490px;
+    height: 500px;
+  }
+
+  .boxes .box img {
+    width: 490px;
+  }
+
+  .first-slide {
+    width: 0 !important;
+  }
+
+  .handsOnLearning .progress {
+    top: 5rem;
+  }
+
+  /* flamingoSuccess */
+  .flamingoSuccess {
+    height: 100%;
+    margin: 2.5rem 0 4rem;
+  }
+
+  .flamingoSuccess .twoBoxes {
+    height: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .flamingoSuccess .leftsideContant {
+    gap: 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .flamingoSuccess .rightsideContant {
+    margin: 3rem 0 0 0;
+  }
+
+  .flamingoSuccess .progress {
+    top: 0rem;
+  }
+
+  /* parties */
+  .parties .row {
+    gap: 4rem;
+  }
+
+  .parties .row img {
+    width: 20%;
+  }
+
+  /* parties */
+  .parties .title {
+    padding: 3.7rem;
+    margin-top: 0rem;
+  }
+
+  /* start parties_two  */
+
+  .parties_two .swiper-button-next {
+    margin-top: 15.3rem;
+  }
+
+  .parties_two .progress {
+    top: 0;
+  }
+
+  /* What Our Parents Are Saying */
+  .parents {
+    height: 100%;
+    margin: 1rem 0 0rem 0;
+  }
+
+  .parents .leftcontent p {
+    font-size: 15px;
+  }
+
+  .parents .swiper-button-next {
+    bottom: 4rem;
+    left: 30rem;
+  }
+
+  .parents .progress {
+    top: 0rem;
+  }
+
+  /* Frequently Asked Questions  */
+  .questions .progress {
+    top: 12rem;
+  }
+
+  /* Our Location */
+  .location .row .leftcontent {
+    width: 90%;
+    font-size: larger;
+  }
+
+  .location .row .rightcontent {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer a.logo {
+    top: 3rem;
+    left: 11rem;
+  }
+}
+
+/* ***************************************** End BootStrap max-width: 576px ****************************************** */
+/* ***************************************** Start BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+  /* Navbar Section */
+  .navbar .container-fluid {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-brand {
+    width: 21%;
+  }
+
+  .RightSide {
+    display: none !important;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 6rem;
+    height: 1000px;
+  }
+
+  .hero .rightSide {
+    top: 1.5rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /*  Infant, Toddler & Preschool Section */
+
+  .baby .container {
+    width: 100%;
+  }
+
+  .baby .cardToWidth {
+    width: 80%;
+  }
+
+  /* Hands on Project-based Learning */
+
+  .handsOnLearning .container {
+    width: 100%;
+  }
+
+  .boxes {
+    width: 100% !important;
+  }
+
+  .swiper-wrapper {
+    width: 60%;
+  }
+
+  .boxes .box {
+    width: 490px;
+    height: 500px;
+  }
+
+  .boxes .box img {
+    width: 490px;
+  }
+
+  .first-slide {
+    width: 0 !important;
+  }
+
+  .handsOnLearning .progress {
+    top: 5rem;
+  }
+
+  /* flamingoSuccess */
+  .flamingoSuccess {
+    height: 100%;
+    margin: 2.5rem 0 4rem;
+  }
+
+  .flamingoSuccess .twoBoxes {
+    height: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .flamingoSuccess .leftsideContant {
+    gap: 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .flamingoSuccess .rightsideContant {
+    margin: 3rem 0 0 0;
+  }
+
+  .flamingoSuccess .progress {
+    top: 0rem;
+  }
+
+  /* parties */
+  .parties .row {
+    gap: 4rem;
+  }
+
+  .parties .row img {
+    width: 20%;
+  }
+
+  /* parties */
+  .parties .title {
+    padding: 3.7rem;
+    margin-top: 0rem;
+  }
+
+  /* start parties_two  */
+
+  .parties_two .swiper-button-next {
+    margin-top: 15.3rem;
+  }
+
+  .parties_two .progress {
+    top: 0;
+  }
+
+  /* What Our Parents Are Saying */
+  .parents {
+    height: 100%;
+    margin: 1rem 0 0rem 0;
+  }
+
+  .parents .leftcontent p {
+    font-size: 15px;
+  }
+
+  .parents .swiper-button-next {
+    bottom: 4rem;
+    left: 30rem;
+  }
+
+  .parents .progress {
+    top: 0rem;
+  }
+
+  /* Frequently Asked Questions  */
+  .questions .progress {
+    top: 12rem;
+  }
+
+  /* Our Location */
+  .location .row .leftcontent {
+    width: 90%;
+    font-size: larger;
+  }
+
+  .location .row .rightcontent {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer a.logo {
+    top: 3rem;
+    left: 11rem;
+  }
+}
+
+/* ***************************************** End BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
+/* ***************************************** Start BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+  /* NavBar Section */
+  .navleftSide .nav-item {
+    width: 60px;
+  }
+
+  .navleftSide.p-3,
+  .navleftSide.ms-5 {
+    padding: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .RightSide {
+    width: 204px;
+    padding: 5px;
+    gap: 1rem !important;
+  }
+
+  .navbar-brand a {
+    width: 30px;
+    padding: 0;
+  }
+
+  .links-content {
+    font-size: 13px;
+  }
+
+  .rightSide .navbar-brand {
+    margin-right: 0rem;
+  }
+
+  .rightcontent {
+    justify-content: center !important;
+  }
+
+  .TourNow {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    width: 150px;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 6rem;
+    height: 600px;
+  }
+
+  .hero .rightSide {
+    top: 1.5rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /*  Infant, Toddler & Preschool Section */
+  .baby {
+    padding-bottom: 0 !important;
+  }
+
+  .baby .container {
+    width: 70%;
+    height: 1250px;
+  }
+
+  .baby .cardToWidth {
+    width: 80%;
+  }
+
+  /* Hands on Project-based Learning */
+
+  .handsOnLearning .container {
+    width: 100%;
+  }
+
+  .boxes {
+    width: 100% !important;
+  }
+
+  .swiper-wrapper {
+    width: 60%;
+  }
+
+  .boxes .box {
+    width: 490px;
+    height: 500px;
+  }
+
+  .boxes .box img {
+    width: 490px;
+  }
+
+  .first-slide {
+    width: 0 !important;
+  }
+
+  .handsOnLearning .progress {
+    top: 5rem;
+  }
+
+  /* flamingoSuccess */
+  .flamingoSuccess {
+    height: 100%;
+    margin: 2.5rem 0 4rem;
+  }
+
+  .flamingoSuccess .twoBoxes {
+    height: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .flamingoSuccess .leftsideContant {
+    gap: 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .flamingoSuccess .rightsideContant {
+    margin: 1rem 0 0 0;
+  }
+
+  .rightsideContant .images img {
+    width: 118px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+  }
+
+  .flamingoSuccess .progress {
+    top: 0rem;
+  }
+
+
+  /* parties */
+  .parties .row {
+    gap: 4rem;
+  }
+
+  .parties .row img {
+    width: 20%;
+  }
+
+  /* parties */
+  .parties .title {
+    padding: 3.7rem;
+    margin-top: 0rem;
+  }
+
+  /* start parties_two  */
+
+  .parties_two .swiper-button-next {
+    margin-top: 15.3rem;
+  }
+
+  .parties_two .progress {
+    top: 0;
+  }
+
+  /* What Our Parents Are Saying */
+  .parents {
+    height: 100%;
+    margin: 2.5rem 0 0rem 0;
+  }
+
+  .parents .row {
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  .parents .leftcontent p {
+    font-size: 15px;
+  }
+
+  .parents .rightcontent {
+    width: 40%;
+  }
+
+  .parents .swiper-slide img {
+    display: flex;
+    width: 450px;
+    height: 400px;
+  }
+
+  .parents .swiper-button-next {
+    bottom: 4rem;
+    left: 55rem;
+  }
+
+  .parents .progress {
+    top: 0rem;
+  }
+
+  /* Frequently Asked Questions  */
+  .questions .progress {
+    top: 12rem;
+  }
+
+  /* Our Location */
+  .location .row .leftcontent {
+    width: 90%;
+    font-size: larger;
+  }
+
+  .location .row .rightcontent {
+    position: relative;
+    right: 6rem;
+    width: 70%;
+  }
+
+  /* Footer */
+  .footer a.logo {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+
+}
+
+/* ***************************************** End BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
+/* ***************************************** Start BootStrap (min-width: 993px) and (max-width: 1200px)****************************************** */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+  .instagramIcon,
+  .xIcon {
+    width: 40px !important;
+  }
+
+  .navbar-brand .nav-item a {
+
+    padding: 0;
+  }
+
+  .navleftSide.ms-5 {
+    margin-left: 0rem !important;
+  }
+
+  .RightSide {
+    width: 190px;
+    padding: 5px;
+    gap: 1rem !important;
+  }
+
+  .TourNow {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 6rem;
+    height: 600px;
+  }
+
+  .hero .rightSide {
+    top: 1.5rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /*  Infant, Toddler & Preschool Section */
+  .baby {
+    padding-bottom: 0 !important;
+  }
+
+  .baby .container {
+    width: 70%;
+    height: 1250px;
+  }
+
+  .baby .cardToWidth {
+    width: 80%;
+  }
+
+  .baby .progress {
+    top: 0rem;
+  }
+
+  /* Hands on Project-based Learning */
+
+  .handsOnLearning .container {
+    width: 100%;
+  }
+
+  .boxes {
+    width: 100% !important;
+  }
+
+  .swiper-wrapper {
+    width: 60%;
+  }
+
+  .boxes .box {
+    width: 490px;
+    height: 500px;
+  }
+
+  .boxes .box img {
+    width: 490px;
+  }
+
+  .first-slide {
+    width: 0 !important;
+  }
+
+  .handsOnLearning .progress {
+    top: 5rem;
+  }
+
+  /* flamingoSuccess */
+  .flamingoSuccess {
+    height: 100%;
+    margin: 2.5rem 0 4rem;
+  }
+
+  .flamingoSuccess .twoBoxes {
+    height: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .flamingoSuccess .leftsideContant {
+    gap: 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .flamingoSuccess .rightsideContant {
+    margin: 1rem 0 0 0;
+  }
+
+  .rightsideContant .images img {
+    width: 118px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+  }
+
+  .flamingoSuccess .progress {
+    top: 0rem;
+  }
+
+  /* parties */
+  .parties .row {
+    gap: 4rem;
+  }
+
+  .parties .row img {
+    width: 20%;
+  }
+
+  /* parties */
+  .parties .title {
+    padding: 3.7rem;
+    margin-top: 0rem;
+  }
+
+  /* start parties_two  */
+
+  .parties_two .swiper-button-next {
+    margin-top: 15.3rem;
+  }
+
+  .parties_two .progress {
+    top: 0;
+  }
+
+  /* What Our Parents Are Saying */
+  .parents {
+    height: 100%;
+    margin: 2.5rem 0 0rem 0;
+  }
+
+  .parents .row {
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  .parents .leftcontent p {
+    font-size: 15px;
+  }
+
+  .parents .rightcontent {
+    width: 40%;
+  }
+
+  .parents .swiper-slide img {
+    display: flex;
+    width: 450px;
+    height: 400px;
+  }
+
+  .parents .swiper-button-next {
+    bottom: 4rem;
+    left: 68rem;
+  }
+
+  .parents .progress {
+    top: 0rem;
+  }
+
+  /* Frequently Asked Questions  */
+  .questions .progress {
+    top: 12rem;
+  }
+
+  /* Our Location */
+  .location .row .leftcontent {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .location .row .leftcontent h3 {
+    font-size: clamp(2rem, 4.4vw, 3.5rem);
+  }
+
+  .location .row .rightcontent {
+    position: relative;
+    right: 6.6rem;
+    width: 70%;
+  }
+
+  /* Footer */
+  .footer a.logo {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+}
+
+/* ***************************************** End BootStrap (min-width: 993px) and (max-width: 1200px)****************************************** */
+/* ***************************************** Start BootStrap (min-width: 1201px)****************************************** */
+@media only screen and (min-width: 1201px) {
+
+  /* NavBar */
+
+  .navbar-brand {
+    width: 10%;
+  }
+
+  .rightSide .navbar-nav {
+    margin-right: 25px;
+  }
+
+  .links-content {
+    font-size: 16px;
+  }
+
+  /* hero */
+  .hero .leftSide h1 {
+    font-size: clamp(4rem, 3.7vw, 3.5rem);
+  }
+
+
+  /* NavBar Section */
+  .instagramIcon,
+  .xIcon {
+    width: 40px !important;
+  }
+
+  .navbar-brand .nav-item a {
+
+    padding: 0;
+  }
+
+  .navleftSide.ms-5 {
+    margin-left: 0rem !important;
+  }
+
+  .RightSide {
+    width: 190px;
+    padding: 5px;
+    gap: 1rem !important;
+  }
+
+  .TourNow {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 5.5rem;
+    height: 800px;
+  }
+
+  .hero .rightSide {
+    top: 4.4rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /* handsOnLearning */
+  .handsOnLearning .progress {
+    top: 5rem;
+  }
+
+  /* parties_two */
+  .parties_two .progress {
+    top: 0rem;
+  }
+
+  /* .parents .progress {
+  top: 0rem;
+} */
+  /* questions */
+  .questions .progress {
+    top: 12rem;
+  }
+
+
+}
+
+/* ***************************************** End BootStrap (min-width: 1201px)****************************************** */
