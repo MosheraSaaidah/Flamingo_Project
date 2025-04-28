@@ -627,7 +627,7 @@ a {
 /* End Footer  */
 
 /* ********************************************* Start BootStrap  max-width: 576px*************************************** */
-@media only screen and (min-width: 320px) and (max-width: 415px) {
+@media only screen and (min-width:320px) and (max-width: 415px) {
   /* Navbar Section */
   .navbar .container-fluid {
     position: sticky;
@@ -748,14 +748,14 @@ a {
     margin-left: 0.1rem;
   }
   .leftsideContant .lines div {
-    font-size: 14px;
+    font-size: 13px;
   }
   .flamingoSuccess .leftsideContant {
     gap: 0;
     margin: 1rem 0 0.5rem 0;
   }
   .leftsideContant .lines {
-    gap: 2.4rem;
+    gap: 1.5rem;
   }
   .flamingoSuccess .rightsideContant {
     margin: 2rem 0 0 0;
@@ -764,7 +764,7 @@ a {
     margin-bottom: 0rem;
   }
   .rightsideContant .images img {
-    width: 135px;
+    width: 80px;
     padding: 0.7rem;
   }
   .flamingoSuccess .progress {
@@ -788,12 +788,16 @@ a {
   .parties .title h2 {
     font-size: clamp(2rem, 3.5vw, 3.5rem);
     font-weight: 600;
+
   }
   .parties .title span {
-    font-size: clamp(1.3rem, 1.1vw, 2.5rem) !important;
+    font-size: clamp(1.04rem, 1.1vw, 2.5rem) !important;
+  }
+  .parties .row {
+    gap: 1rem;
   }
   .parties .row img {
-    width: 35%;
+    width: 25%;
   }
   /* start parties_two  */
   .parties_two .boxes {
