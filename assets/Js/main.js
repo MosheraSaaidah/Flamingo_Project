@@ -98,7 +98,12 @@ var swiper = new Swiper(".swiper", {
   },
   // Enable debugger
   debugger: true,
-
+  // تشغيل السلايد بشكل تلقائي 
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
+  pauseOnMouseEnter: true,
   breakpoints: {
     300: {
       slidesPerView: 1.5,
@@ -117,12 +122,12 @@ var swiper = new Swiper(".swiper", {
     // عندما يكون عرض الشاشة >= 1024px
     1024: {
       slidesPerView: 1.9,
-      spaceBetween: 5, // المسافة بين الشرائح عند هذا الحجم
+      spaceBetween: 10, // المسافة بين الشرائح عند هذا الحجم
     },
     // عندما يكون عرض الشاشة >= 1280px
     1280: {
       slidesPerView: 2.6,
-      spaceBetween: 120, // المسافة بين الشرائح عند هذا الحجم
+      spaceBetween: 180, // المسافة بين الشرائح عند هذا الحجم
     },
   },
  
@@ -132,7 +137,7 @@ var swiper = new Swiper(".swiper", {
 
 // Initialize Swiper [For Parents  Section ]
 var swiper = new Swiper(".parents .mySwiper", {
-  spaceBetween: 50,
+  spaceBetween: 200,
   slidesPerView: 1,
   navigation: {
     nextEl: ".swiper-button-next",
