@@ -161,11 +161,13 @@ a {
   height: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: linear-gradient(90deg,
-      rgba(227, 82, 174, 0.938) 0%,
-      rgb(230, 106, 168) 4%,
-      rgba(238, 113, 175, 0.833) 24%,
-      rgba(236, 146, 191, 0.626) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 82, 174, 0.938) 0%,
+    rgb(230, 106, 168) 4%,
+    rgba(238, 113, 175, 0.833) 24%,
+    rgba(236, 146, 191, 0.626) 100%
+  );
 }
 
 .baby .cardToWidth {
@@ -176,7 +178,6 @@ a {
   position: relative;
   top: 3rem;
 }
-
 
 /* End Infant, Toddler & Preschool Section*/
 
@@ -247,19 +248,16 @@ a {
   width: 0.1rem !important;
 }
 
-/* .last-slide {
-  width: 0 !important;
-} */
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   color: black;
   width: 15px;
   height: 15px;
   background-color: rgba(28, 9, 9, 0.715);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -451,7 +449,7 @@ a {
   top: -1.9rem;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -478,7 +476,7 @@ a {
   background-color: var(--main-color);
 }
 
-.accordion-flush>.accordion-item {
+.accordion-flush > .accordion-item {
   border-radius: 0;
   border: 0;
 }
@@ -572,7 +570,6 @@ a {
 }
 
 .location .row .rightcontent {
-
   width: 40%;
 }
 
@@ -629,10 +626,277 @@ a {
 
 /* End Footer  */
 
+/* ********************************************* Start BootStrap  max-width: 576px*************************************** */
+@media only screen and (min-width: 320px) and (max-width: 415px) {
+  /* Navbar Section */
+  .navbar .container-fluid {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .RightSide {
+    display: none !important;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    position: relative;
+    top: 6rem;
+    height: 800px;
+  }
+  .hero .leftSide h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    margin-bottom: 1rem;
+  }
+  .hero .leftSide p {
+    font-size: clamp(1rem, 1.1vw, 2.5rem);
+  }
+  .hero .leftSide h3 {
+    font-size: clamp(1rem, 1.1vw, 2.5rem);
+  }
+  .hero div.alink {
+    gap: 1rem !important;
+  }
+  .hero div.alink a {
+    font-size: clamp(1rem, 1.1vw, 2rem) !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1rem !important;
+  }
+  .hero .rightSide {
+    top: 1.5rem;
+  }
+
+  .hero .rightSide img {
+    width: 100%;
+  }
+
+  .hero .progress {
+    top: 3rem;
+  }
+
+  /*  Infant, Toddler & Preschool Section */
+
+  .baby .container {
+    width: 100%;
+  }
+
+  .baby .cardToWidth {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .card {
+    padding: 0.21rem;
+  }
+  .baby .card .card-body {
+    margin-left: 0 !important;
+  }
+  /* Hands on Project-based Learning */
+  .handsOnLearning {
+    padding: 3rem 0 0rem;
+  }
+  .handsOnLearning .container {
+    width: 100%;
+  }
+
+  .handsOnLearning .boxes {
+    width: 100% !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .handsOnLearning .swiper-wrapper {
+    width: 45%;
+  }
+  .handsOnLearning .boxes .handsContant {
+    top: 21rem;
+    padding: 0.8rem;
+  }
+  .handsOnLearning .boxes .box {
+    width: 300px;
+    height: 540px;
+    margin-bottom: 6rem !important;
+  }
+
+  .handsOnLearning .boxes .box img {
+    width: 300px;
+  }
+
+  .handsOnLearning .first-slide {
+    width: 0 !important;
+  }
+  .handsOnLearning .swiper-button-next {
+    margin-top: 19.4rem;
+  }
+  .handsOnLearning .progress {
+    top: 0rem;
+  }
+
+  /* flamingoSuccess */
+  .flamingoSuccess {
+    height: 100%;
+    margin: 2.5rem 0 4rem;
+  }
+
+  .flamingoSuccess .twoBoxes {
+    height: 100%;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-left: 0.1rem;
+  }
+  .leftsideContant .lines div {
+    font-size: 14px;
+  }
+  .flamingoSuccess .leftsideContant {
+    gap: 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .leftsideContant .lines {
+    gap: 2.4rem;
+  }
+  .flamingoSuccess .rightsideContant {
+    margin: 2rem 0 0 0;
+  }
+  .rightsideContant p {
+    margin-bottom: 0rem;
+  }
+  .rightsideContant .images img {
+    width: 135px;
+    padding: 0.7rem;
+  }
+  .flamingoSuccess .progress {
+    top: 0rem;
+  }
+
+  /* parties */
+  .parties .row {
+    gap: 4rem;
+  }
+
+  .parties .row img {
+    width: 20%;
+  }
+
+  /* parties */
+  .parties .title {
+    padding: 3.7rem;
+    margin-top: 0rem;
+  }
+  .parties .title h2 {
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 600;
+  }
+  .parties .title span {
+    font-size: clamp(1.3rem, 1.1vw, 2.5rem) !important;
+  }
+  .parties .row img {
+    width: 35%;
+  }
+  /* start parties_two  */
+  .parties_two .boxes {
+    width: 100% !important;
+    padding-bottom: 2rem !important;
+  }
+  .parties_two .first-slide {
+    width: 0 !important;
+  }
+  .parties_two .swiper-wrapper {
+    width: 45%;
+  }
+  .parties_two .boxes .handsContant {
+    top: 21rem;
+    padding: 0.8rem;
+  }
+  .parties_two .boxes .box {
+    width: 300px;
+    height: 600px;
+    margin-bottom: 3rem !important;
+  }
+
+  .parties_two .boxes .box img {
+    width: 300px;
+  }
+  .parties_two .box .handsContant p {
+    font-size: 14px;
+  }
+  .first-slide {
+    width: 0 !important;
+  }
+  .parties_two .swiper-button-next {
+    margin-top: 19.05rem;
+  }
+  .parties_two .progress {
+    top: 0;
+  }
+
+  /* What Our Parents Are Saying */
+  .parents {
+    height: 100%;
+    margin: 1rem 0 0rem 0;
+  }
+  .parents .title {
+    margin-top: 2rem;
+  }
+  .parents .leftcontent p {
+    padding-left: 0.2rem;
+    max-width: 100%;
+  }
+  .parents .swiper-slide img {
+    width: 250px;
+    height: 250px;
+  }
+  .parents .swiper-button-next {
+    bottom: 3.8rem;
+    left: 16.5rem;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    color: black;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(28, 9, 9, 0.715);
+  }
+  .parents .progress {
+    top: 0rem;
+  }
+
+  /* Frequently Asked Questions  */
+  .questions .progress {
+    top: 12rem;
+  }
+
+  /* Our Location */
+  .location .row .leftcontent {
+    width: 90%;
+    font-size: clamp(1rem, 1.1vw, 2.5rem);
+  }
+
+  .location .row .rightcontent {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer .items {
+    justify-content: start;
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+  .footer a.logo {
+    top: 3rem;
+    left: 6rem;
+  }
+  .footer .content {
+    padding: 0 !important;
+  }
+}
+/* ***************************************** End BootStrap max-width: 576px ****************************************** */
 
 /* ********************************************* Start BootStrap  max-width: 576px*************************************** */
-@media only screen and (max-width: 576px) {
-
+@media only screen and (min-width: 416px) and (max-width: 576px) {
   /* Navbar Section */
   .navbar .container-fluid {
     position: sticky;
@@ -653,7 +917,9 @@ a {
     top: 6rem;
     height: 1000px;
   }
-
+  .hero .leftSide h1 {
+    font-size: clamp(3rem, 3vw, 3.5rem);
+  }
   .hero .rightSide {
     top: 1.5rem;
   }
@@ -715,7 +981,9 @@ a {
 
   .flamingoSuccess .twoBoxes {
     height: 100%;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-left: 0.1rem;
   }
 
   .flamingoSuccess .leftsideContant {
@@ -726,7 +994,10 @@ a {
   .flamingoSuccess .rightsideContant {
     margin: 3rem 0 0 0;
   }
-
+  .rightsideContant .images img {
+    width: 130px;
+    padding: 1rem;
+  }
   .flamingoSuccess .progress {
     top: 0rem;
   }
@@ -761,16 +1032,34 @@ a {
     height: 100%;
     margin: 1rem 0 0rem 0;
   }
-
-  .parents .leftcontent p {
-    font-size: 15px;
+  .parents .title {
+    margin-top: 2rem;
   }
-
+  .parents .leftcontent p {
+    font-size: clamp(1rem, 1.1vw, 2.5rem);
+    padding-left: 1.2rem;
+    max-width: 80%;
+  }
+  .parents .leftcontent h4 {
+    padding-left: 1.2rem;
+  }
+  .parents .swiper-slide img {
+    width: 350px;
+    height: 350px;
+    margin-right: 4.5rem;
+  }
   .parents .swiper-button-next {
     bottom: 4rem;
-    left: 30rem;
+    left: 27rem;
   }
-
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    color: black;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(28, 9, 9, 0.715);
+  }
   .parents .progress {
     top: 0rem;
   }
@@ -796,11 +1085,9 @@ a {
     left: 11rem;
   }
 }
-
 /* ***************************************** End BootStrap max-width: 576px ****************************************** */
 /* ***************************************** Start BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-
   /* Navbar Section */
   .navbar .container-fluid {
     position: sticky;
@@ -845,35 +1132,44 @@ a {
   }
 
   /* Hands on Project-based Learning */
+.handsOnLearning {
+  padding: 3rem 0 0rem;
+}
+.handsOnLearning .container {
+  width: 100%;
+}
 
-  .handsOnLearning .container {
-    width: 100%;
-  }
+.handsOnLearning .boxes {
+  width: 100% !important;
+  padding-bottom: 2rem !important;
+}
 
-  .boxes {
-    width: 100% !important;
-  }
+.handsOnLearning .swiper-wrapper {
+  width: 45%;
+}
+.handsOnLearning .boxes .handsContant {
+  top: 21rem;
+  padding: 0.8rem;
+}
+.handsOnLearning .boxes .box {
+  width: 350px;
+  height: 540px;
+  margin-bottom: 6rem !important;
+}
 
-  .swiper-wrapper {
-    width: 60%;
-  }
+.handsOnLearning .boxes .box img {
+  width: 350px;
+}
 
-  .boxes .box {
-    width: 490px;
-    height: 500px;
-  }
-
-  .boxes .box img {
-    width: 490px;
-  }
-
-  .first-slide {
-    width: 0 !important;
-  }
-
-  .handsOnLearning .progress {
-    top: 5rem;
-  }
+.handsOnLearning .first-slide {
+  width: 0 !important;
+}
+.handsOnLearning .swiper-button-next {
+  margin-top: 19.4rem;
+}
+.handsOnLearning .progress {
+  top: 0rem;
+}
 
   /* flamingoSuccess */
   .flamingoSuccess {
@@ -894,7 +1190,9 @@ a {
   .flamingoSuccess .rightsideContant {
     margin: 3rem 0 0 0;
   }
-
+  .leftsideContant .lines div {
+    font-size: 16px;
+  }
   .flamingoSuccess .progress {
     top: 0rem;
   }
@@ -903,7 +1201,6 @@ a {
   .parties .row {
     gap: 4rem;
   }
-
   .parties .row img {
     width: 20%;
   }
@@ -916,18 +1213,45 @@ a {
 
   /* start parties_two  */
 
-  .parties_two .swiper-button-next {
-    margin-top: 15.3rem;
-  }
+.parties_two .boxes {
+  width: 100% !important;
+  padding-bottom: 2rem !important;
+}
+.parties_two .first-slide {
+  width: 0 !important;
+}
+.parties_two .swiper-wrapper {
+  width: 45%;
+}
+.parties_two .boxes .handsContant {
+  top: 21rem;
+  padding: 0.8rem;
+}
+.parties_two .boxes .box {
+  width: 350px;
+  height: 600px;
+  margin-bottom: 3rem !important;
+}
 
-  .parties_two .progress {
-    top: 0;
-  }
-
+.parties_two .boxes .box img {
+  width: 350px;
+}
+.parties_two .box .handsContant p {
+  font-size: 14px;
+}
+.first-slide {
+  width: 0 !important;
+}
+.parties_two .swiper-button-next {
+  margin-top: 19.05rem;
+}
+.parties_two .progress {
+  top: 0;
+}
   /* What Our Parents Are Saying */
   .parents {
     height: 100%;
-    margin: 1rem 0 0rem 0;
+    margin: 3rem 0 0rem 0;
   }
 
   .parents .leftcontent p {
@@ -947,17 +1271,29 @@ a {
   .questions .progress {
     top: 12rem;
   }
+/* Our Location */
 
-  /* Our Location */
-  .location .row .leftcontent {
-    width: 90%;
-    font-size: larger;
-  }
+.location .row {
+  justify-content: start;
+  /* gap: 3rem; */
+}
 
-  .location .row .rightcontent {
-    width: 90%;
-  }
+.location .row .leftcontent {
+  width: 40%;
+}
 
+.location .row .leftcontent h3 {
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+}
+
+.location .row .leftcontent a {
+  width: fit-content;
+  padding: 1rem;
+}
+
+.location .row .rightcontent {
+  width: 48%;
+}
   /* Footer */
   .footer a.logo {
     top: 3rem;
@@ -968,58 +1304,44 @@ a {
 /* ***************************************** End BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
 /* ***************************************** Start BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+ 
+ /* Navbar Section */
+ .navbar .container-fluid {
+  position: sticky;
+  top: 0;
+}
 
-  /* NavBar Section */
-  .navleftSide .nav-item {
-    width: 60px;
-  }
+.navbar-brand {
+  width: 21%;
+}
 
-  .navleftSide.p-3,
-  .navleftSide.ms-5 {
-    padding: 0rem !important;
-    margin-left: 0rem !important;
-  }
-
-  .RightSide {
-    width: 204px;
-    padding: 5px;
-    gap: 1rem !important;
-  }
-
-  .navbar-brand a {
-    width: 30px;
-    padding: 0;
-  }
-
-  .links-content {
-    font-size: 13px;
-  }
-
-  .rightSide .navbar-brand {
-    margin-right: 0rem;
-  }
-
-  .rightcontent {
-    justify-content: center !important;
-  }
-
-  .TourNow {
-    font-size: 12px;
-    margin-top: 7px;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    width: 150px;
-  }
-
+.RightSide {
+  display: none !important;
+}
   /* Hero Section */
   .hero .container {
     position: relative;
     top: 6rem;
     height: 600px;
   }
+.hero .leftSide h1 {
+  font-size: clamp(3rem, 3vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+.hero .leftSide p {
+  font-size: clamp(1.2rem, 1.1vw, 2.5rem);
+}
+.hero .leftSide h3 {
+  font-size: clamp(1.2rem, 1.1vw, 2.5rem);
+}
+.hero div.alink {
+  gap: 1rem !important;
+}
+.hero div.alink a {
+  font-size: clamp(1rem, 1.1vw, 2rem) !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 1rem !important;
+}
 
   .hero .rightSide {
     top: 1.5rem;
@@ -1048,67 +1370,77 @@ a {
   }
 
   /* Hands on Project-based Learning */
-
+  .handsOnLearning {
+    padding: 3rem 0 0rem;
+  }
   .handsOnLearning .container {
     width: 100%;
   }
 
-  .boxes {
+  .handsOnLearning .boxes {
     width: 100% !important;
+    padding-bottom: 2rem !important;
   }
 
-  .swiper-wrapper {
-    width: 60%;
+  .handsOnLearning .swiper-wrapper {
+    width: 45%;
+  }
+  .handsOnLearning .boxes .handsContant {
+    top: 21rem;
+    padding: 0.8rem;
+  }
+  .handsOnLearning .boxes .box {
+    width: 350px;
+    height: 540px;
+    margin-bottom: 6rem !important;
   }
 
-  .boxes .box {
-    width: 490px;
-    height: 500px;
+  .handsOnLearning .boxes .box img {
+    width: 350px;
   }
 
-  .boxes .box img {
-    width: 490px;
-  }
-
-  .first-slide {
+  .handsOnLearning .first-slide {
     width: 0 !important;
   }
-
+  .handsOnLearning .swiper-button-next {
+    margin-top: 19.4rem;
+  }
   .handsOnLearning .progress {
-    top: 5rem;
-  }
-
-  /* flamingoSuccess */
-  .flamingoSuccess {
-    height: 100%;
-    margin: 2.5rem 0 4rem;
-  }
-
-  .flamingoSuccess .twoBoxes {
-    height: 100%;
-    padding-bottom: 2.5rem;
-  }
-
-  .flamingoSuccess .leftsideContant {
-    gap: 0;
-    margin: 1rem 0 0.5rem 0;
-  }
-
-  .flamingoSuccess .rightsideContant {
-    margin: 1rem 0 0 0;
-  }
-
-  .rightsideContant .images img {
-    width: 118px;
-    background-color: white;
-    padding: 6px;
-    border-radius: 20px;
-  }
-
-  .flamingoSuccess .progress {
     top: 0rem;
   }
 
+/*  flamingoSuccess */
+
+.flamingoSuccess {
+  height: 100%;
+  margin: 2.5rem 0 4rem;
+}
+
+.flamingoSuccess .twoBoxes {
+  height: 100%;
+  padding-bottom: 1rem;
+  width: 100%;
+  margin-left: 0.1rem;
+}
+.leftsideContant .lines div {
+  font-size: 16px;
+}
+.flamingoSuccess .leftsideContant {
+  gap: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.flamingoSuccess .rightsideContant {
+  margin: 1rem 0 0 0;
+  gap: 0;
+}
+.rightsideContant .images img {
+  width: 82px;
+  padding: 0.5rem;
+}
+.flamingoSuccess .progress {
+  top: 0rem;
+}
 
   /* parties */
   .parties .row {
@@ -1127,13 +1459,41 @@ a {
 
   /* start parties_two  */
 
-  .parties_two .swiper-button-next {
-    margin-top: 15.3rem;
-  }
+.parties_two .boxes {
+  width: 100% !important;
+  padding-bottom: 2rem !important;
+}
+.parties_two .first-slide {
+  width: 0 !important;
+}
+.parties_two .swiper-wrapper {
+  width: 45%;
+}
+.parties_two .boxes .handsContant {
+  top: 21rem;
+  padding: 0.8rem;
+}
+.parties_two .boxes .box {
+  width: 350px;
+  height: 600px;
+  margin-bottom: 3rem !important;
+}
 
-  .parties_two .progress {
-    top: 0;
-  }
+.parties_two .boxes .box img {
+  width: 350px;
+}
+.parties_two .box .handsContant p {
+  font-size: 14px;
+}
+.first-slide {
+  width: 0 !important;
+}
+.parties_two .swiper-button-next {
+  margin-top: 19.05rem;
+}
+.parties_two .progress {
+  top: 0;
+}
 
   /* What Our Parents Are Saying */
   .parents {
@@ -1162,7 +1522,7 @@ a {
 
   .parents .swiper-button-next {
     bottom: 4rem;
-    left: 55rem;
+    left: 42rem;
   }
 
   .parents .progress {
@@ -1176,14 +1536,13 @@ a {
 
   /* Our Location */
   .location .row .leftcontent {
-    width: 90%;
+    width: 40%;
     font-size: larger;
   }
 
   .location .row .rightcontent {
     position: relative;
-    right: 6rem;
-    width: 70%;
+    width: 50%;
   }
 
   /* Footer */
@@ -1191,21 +1550,17 @@ a {
     top: 1.5rem;
     left: 1.5rem;
   }
-
-
 }
 
 /* ***************************************** End BootStrap (min-width: 577px) and (max-width: 768px)****************************************** */
 /* ***************************************** Start BootStrap (min-width: 993px) and (max-width: 1200px)****************************************** */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-
   .instagramIcon,
   .xIcon {
     width: 40px !important;
   }
 
   .navbar-brand .nav-item a {
-
     padding: 0;
   }
 
@@ -1407,15 +1762,12 @@ a {
     top: 1.5rem;
     left: 1.5rem;
   }
-
 }
 
 /* ***************************************** End BootStrap (min-width: 993px) and (max-width: 1200px)****************************************** */
 /* ***************************************** Start BootStrap (min-width: 1201px)****************************************** */
 @media only screen and (min-width: 1201px) {
-
   /* NavBar */
-
   .navbar-brand {
     width: 10%;
   }
@@ -1427,21 +1779,13 @@ a {
   .links-content {
     font-size: 16px;
   }
-
-  /* hero */
-  .hero .leftSide h1 {
-    font-size: clamp(4rem, 3.7vw, 3.5rem);
-  }
-
-
-  /* NavBar Section */
+  /* NavBar */
   .instagramIcon,
   .xIcon {
     width: 40px !important;
   }
 
   .navbar-brand .nav-item a {
-
     padding: 0;
   }
 
@@ -1465,7 +1809,9 @@ a {
     top: 5.5rem;
     height: 800px;
   }
-
+.hero .leftSide h1 {
+  font-size: clamp(3rem, 3.7vw, 3.5rem);
+}
   .hero .rightSide {
     top: 4.4rem;
   }
@@ -1495,8 +1841,6 @@ a {
   .questions .progress {
     top: 12rem;
   }
-
-
 }
 
 /* ***************************************** End BootStrap (min-width: 1201px)****************************************** */

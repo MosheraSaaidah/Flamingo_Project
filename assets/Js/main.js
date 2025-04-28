@@ -100,15 +100,19 @@ var swiper = new Swiper(".swiper", {
   debugger: true,
 
   breakpoints: {
+    300: {
+      slidesPerView: 1.5,
+      spaceBetween: 200, // المسافة بين الشرائح عند هذا الحجم
+    },
     // عندما يكون عرض الشاشة >= 640px
     576: {
-      slidesPerView: 1.4,
-      spaceBetween: 200, // المسافة بين الشرائح عند هذا الحجم
+      slidesPerView: 1.8,
+      spaceBetween: 150, // المسافة بين الشرائح عند هذا الحجم
     },
     // عندما يكون عرض الشاشة >= 768px
     768: {
-      slidesPerView: 1.9,
-      spaceBetween: 10, // المسافة بين الشرائح عند هذا الحجم
+      slidesPerView: 2.2,
+      spaceBetween: 70, // المسافة بين الشرائح عند هذا الحجم
     },
     // عندما يكون عرض الشاشة >= 1024px
     1024: {
