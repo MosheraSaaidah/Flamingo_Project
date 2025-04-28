@@ -852,6 +852,10 @@ a {
     width: 250px;
     height: 250px;
   }
+  .parents .swiper-button-prev {
+    bottom: 1rem;
+    left:2.4rem;
+  }
   .parents .swiper-button-next {
     bottom: 3.8rem;
     left: 16.5rem;
